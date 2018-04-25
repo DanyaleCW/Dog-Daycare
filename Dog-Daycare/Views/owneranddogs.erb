@@ -1,0 +1,11 @@
+<h1>Owners & Their Dogs</h1>
+<h2> <%= @owner.name %> </h2>
+<p> <%= @owner.email %> </p>
+<h2>Dogs:</h2>
+  <ol type="I">
+   <% @ownsdogs.each do |id| %>
+    <li><%= id.name %></li>
+
+  <% end %>
+
+
